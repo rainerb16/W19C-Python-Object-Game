@@ -50,7 +50,7 @@ class GameBoard:
     # Return True if the player is in the winning column and row
     # Return False otherwise
     def checkWin(self, playerRow, playerColumn):
-        if Player == self.winningRow & Player == self.winningColumn:
+        if playerRow == self.winningRow and playerColumn == self.winningColumn:
             return True
         else:
             return False

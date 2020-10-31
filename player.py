@@ -4,10 +4,10 @@ class Player:
         self.columnPosition = initialColumn
 
     def moveUp(self):
-        self.rowPosition = self.rowPosition + 1
+        self.rowPosition = self.rowPosition -1
 
     def moveDown(self):
-        self.rowPosition = self.rowPosition - 1
+        self.rowPosition = self.rowPosition + 1
 
     def moveLeft(self):
         self.columnPosition = self.columnPosition - 1
