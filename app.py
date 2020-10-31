@@ -24,17 +24,17 @@ while True:
     # TODO
     # Move the player through the board
     if selection == 'w':
-        player.moveUp()
-        print(board.checkMove)
+        if board.checkMove(player.rowPosition - 1 , player.columnPosition):
+            player.moveUp()
     elif selection == 's':
-        player.moveDown()
-        print(board.checkMove)
+        if board.checkMove(player.rowPosition + 1 , player.columnPosition):
+            player.moveDown()
     elif selection == 'a':
-        player.moveLeft()
-        print(board.checkMove)
+        if board.checkMove(player.rowPosition, player.columnPosition - 1):
+            player.moveLeft()
     elif selection == 'd':
-        player.moveRight()
-        print(board.checkMove)
+        if board.checkMove(player.rowPosition, player.columnPosition + 1):
+            player.moveRight()
     else:
         print("Not a selection")
 
